@@ -2,7 +2,7 @@ source 'http://rubygems.org'
 ruby "2.7.0"
 
 gem 'listen'
-gem 'pg'
+#gem 'pg'
 
 gem 'mandrill'	
 gem 'devise'
@@ -57,7 +57,7 @@ end
 group :production do
      #rake db:create:all
      #rails s -e production
-     #gem 'sqlite3-ruby', :require => 'sqlite3'
+     gem 'sqlite3-ruby', :require => 'sqlite3'
   gem 'rails_12factor'
 end
 
